@@ -53,7 +53,7 @@ body {
   justify-content: center;
   align-items: stretch;
   text-align: center;
-  margin: 0 20rem;
+  margin: 0 2em;
   gap: 4em;
 }
 
@@ -111,18 +111,40 @@ body {
 }
 @media only screen and (max-width: 728px) {
   html {
-    font-size: 40%;
+    font-size: 60%;
+  }
+}
+@media only screen and (max-width: 507px) {
+  .greetings {
+    font-size: 2.5rem;
   }
 }
 
-@media only screen and (max-width: 440px) {
-  html {
-    font-size: 25%;
+@media only screen and (max-width: 350px) {
+  .greetings {
+    font-size: 2rem;
   }
 }
 
-@media only screen and (max-width: 276px) {
+@media only screen and (max-width: 296px) {
   html {
-    font-size: 18%;
+    font-size: 50%;
+  }
+
+  .link {
+    font-size: 5rem;
+  }
+}
+@media only screen and (max-width: 213px) {
+  html {
+    font-size: 50%;
+  }
+
+  .main {
+    margin: 0 0.1em;
+  }
+
+  .link {
+    font-size: 4rem;
   }
 }
