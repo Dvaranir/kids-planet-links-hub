@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  font-family: "Oswald", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  margin: 0;
+  background-image: url("./assets/background.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: brightness(0.4);
+  padding-bottom: 20em;
+  color: #fff;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 0 5em;
+}
+
+.logo {
+  margin-top: 1rem;
+  max-width: 15rem;
+}
+
+.greetings {
+  font-size: 4rem;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  text-align: center;
+  margin: 0 20rem;
+  gap: 4em;
+}
+
+.link {
+  font-size: 6rem;
+  background-color: aquamarine;
+  padding: 0.1em 0.3em;
+  padding-bottom: 0.2em;
+  border-radius: 2rem;
+}
+
+.link:focus {
+  outline: none;
+}
+
+.whatsapp {
+  background-color: #3ad756;
+  border: 5px solid #15962f;
+}
+
+.whatsapp:hover {
+  background-color: #15962f;
+}
+
+.site {
+  background-color: #4e81cd;
+  border: 5px solid #305080;
+}
+
+.site:hover {
+  background: #305080;
+}
+
+.instagram {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+
+  border: 5px solid #b03e32;
+}
+
+.instagram:hover {
+  background: #b03e32;
+}
+
+@media only screen and (max-width: 1112px) {
+  .greetings {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 728px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  html {
+    font-size: 25%;
+  }
+}
+
+@media only screen and (max-width: 276px) {
+  html {
+    font-size: 18%;
+  }
+}
