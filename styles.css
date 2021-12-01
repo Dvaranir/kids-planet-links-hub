@@ -2,11 +2,32 @@
   box-sizing: border-box;
 }
 
+/* prettier-ignore */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
 html {
-  margin: 0;
-  padding: 0;
   font-size: 62.5%;
   font-family: "Oswald", sans-serif;
+  text-decoration: none;
 }
 
 a {
@@ -18,11 +39,10 @@ body {
   margin: 0;
   background-image: url("./assets/background.webp");
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 20em;
   color: #fff;
-  overflow: hidden;
+
   height: 100vh;
 }
 
@@ -52,85 +72,146 @@ body {
   justify-content: center;
   align-items: stretch;
   text-align: center;
-  margin: 0 2em;
-  gap: 4em;
+  margin: 0 20rem;
+  padding-bottom: 2rem;
+  gap: 1.5rem;
+}
+
+.dark {
+  color: rgb(77, 77, 77);
 }
 
 .link {
   font-size: 6rem;
   background-color: aquamarine;
   padding: 0.1em 0.3em;
-  padding-bottom: 0.2em;
   border-radius: 2rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.link-text {
+  text-align: left;
+  font-size: 2.5rem;
+}
+
+.link-remaining__text {
+  opacity: 85%;
 }
 
 .link:focus {
   outline: none;
 }
 
+.icon {
+  width: 7.5rem;
+  margin: 0 1rem;
+}
+
 .whatsapp {
-  background-color: #3ad756;
-  border: 5px solid #15962f;
+  background-color: #4ecb5c;
 }
 
 .whatsapp:hover {
-  background-color: #15962f;
-}
-.whatsapp::after {
-  background-color: #3ad756;
-  border: 5px solid #15962f;
+  background-color: #45b853;
 }
 
 .site {
-  background-color: #4e81cd;
-  border: 5px solid #305080;
+  background-color: #e7d9d3;
 }
 
 .site:hover {
-  background: #305080;
-}
-.site::after {
-  background-color: #4e81cd;
-  border: 5px solid #305080;
+  background: #e7d9d3c9;
 }
 
 .instagram {
-  background: radial-gradient(
-    circle at 30% 107%,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
-  );
-
-  border: 5px solid #b03e32;
+  background: #bb2d72;
 }
 
 .instagram:hover {
-  background: #b03e32;
+  background: #bb2d72c5;
 }
-.instagram::after {
-  background: radial-gradient(
-    circle at 30% 107%,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
-  );
 
-  border: 5px solid #b03e32;
+.twogis {
+  background: #32a23a;
+}
+
+.twogis:hover {
+  background: #3ec747c2;
+}
+
+.kaspi {
+  background: #f14635;
+}
+
+.kaspi:hover {
+  background: #f14535cb;
+}
+
+.FAQ-label {
+  font-size: 2.5rem;
+  text-align: left;
+}
+
+input[id^="spoiler"] {
+  display: none;
+}
+
+input[id^="spoiler"] + label {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  margin: 0.5rem 0;
+  padding: 1rem 2rem;
+  background: rgb(0, 0, 0);
+  color: #fff;
+  text-align: left;
+  font-size: 2rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  transition: all 0.6s;
+}
+
+input[id^="spoiler"]:checked + label {
+  color: #333;
+  background: rgb(255, 255, 255);
+}
+input[id^="spoiler"] ~ .spoiler {
+  width: 90%;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  margin: auto;
+  font-size: 2rem;
+  text-align: left;
+  transition: all 0.6s;
+}
+input[id^="spoiler"]:checked + label + .spoiler {
+  height: auto;
+  opacity: 1;
+}
+
+.google-map iframe {
+  width: 100%;
+  border-radius: 2rem;
 }
 
 @media only screen and (max-width: 1112px) {
+  .main {
+    margin: 0 5rem;
+  }
+
   .greetings {
     font-size: 3rem;
   }
 }
 @media only screen and (max-width: 728px) {
   html {
-    font-size: 60%;
+    font-size: 40%;
+  }
+  .main {
+    margin: 0 2rem;
   }
 }
 @media only screen and (max-width: 507px) {
@@ -147,7 +228,7 @@ body {
 
 @media only screen and (max-width: 296px) {
   html {
-    font-size: 50%;
+    font-size: 35%;
   }
 
   .link {
