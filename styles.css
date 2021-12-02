@@ -160,7 +160,7 @@ input[id^="spoiler"] {
 
 input[id^="spoiler"] + label {
   display: block;
-  width: 100%;
+
   margin: 0 auto;
   margin: 0.5rem 0;
   padding: 1rem 2rem;
