@@ -1,4 +1,4 @@
-<<<<<<< HEAD * {
+* {
   box-sizing: border-box;
 }
 
@@ -152,6 +152,46 @@ body {
 .FAQ-label {
   font-size: 2.5rem;
   text-align: left;
+}
+
+.submit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-element {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 2rem;
+}
+
+.input {
+  font-family: "Oswald", sans-serif;
+  height: 5rem;
+  font-size: 3.5rem;
+  border: none;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.submit-btn {
+  font-family: "Oswald", sans-serif;
+  height: 6rem;
+  cursor: pointer;
+  text-align: center;
+  line-height: 3rem;
+  font-size: 2rem;
+  background: #fff;
+  border: none;
+  border-radius: 1.5rem;
+}
+
+.submit-btn:hover {
+  background: rgb(212, 212, 212);
 }
 
 input[id^="spoiler"] {

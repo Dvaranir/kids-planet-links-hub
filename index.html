@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -99,10 +99,26 @@
           loading="lazy"
         ></iframe>
       </div>
+
+      <form class="submit-form" action="submit" onsubmit=" return sender()">
+        <div class="form-element">
+            <label for="name">Ваше имя</label>
+            <input class="input" type="text" name="name" id="name" required>
+          </div>
+          <div class="form-element">
+            <label for="tel">Ваш номер</label>
+            <input class="input" type="tel" name="phone" id="tel" required>
+          </div>
+        
+          <input class="submit-btn" type="submit" value="Перезвоните мне">
+      </form>
     </main>
+    
 
     <!-- Snowflakes -->
     <div class="snowflakes"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    
+    <script src="script.js"></script>
   </body>
 </html>
 
