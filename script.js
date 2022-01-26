@@ -1,16 +1,19 @@
 const telegramToken = "5045556178:AAHPj4pmN_1nhL_BvYmDpmra2sEcOYUuDh0";
-const chatID = 461790212;
+const chatID = -605141487;
 let userName, phoneNumber, message;
 
 const ready = function () {
   userName = document.getElementById("name").value;
   phoneNumber = document.getElementById("tel").value;
-  message =
-    "Имя " + userName + "\nНомер: " + phoneNumber + "\nОткуда: Из Instagram";
+
+  message = `Имя: ${userName}\nНомер: ${phoneNumber}\nОткуда: ${
+    document.querySelector(".promo_flag") ? "С рекламы" : "Из Instagram"
+  }`;
 };
 
 const sender = function () {
   ready();
+  console.log(document.querySelector(".promo_flag"));
   const settings = {
     async: true,
     crossDomain: true,
@@ -29,6 +32,7 @@ const sender = function () {
   $.ajax(settings).done(function (response) {
     console.log(response);
   });
+
   document.getElementById("name").value = "";
   document.getElementById("tel").value = "";
 
