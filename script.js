@@ -1,5 +1,5 @@
 const telegramToken = "5045556178:AAHPj4pmN_1nhL_BvYmDpmra2sEcOYUuDh0";
-const chatID = -529351248;
+const chatID = -710224452;
 let userName, phoneNumber, message;
 
 const ready = function () {
