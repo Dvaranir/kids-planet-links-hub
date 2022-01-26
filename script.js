@@ -1,12 +1,13 @@
 const telegramToken = "5045556178:AAHPj4pmN_1nhL_BvYmDpmra2sEcOYUuDh0";
 const chatID = -710224452;
-let userName, phoneNumber, message;
+let userName, phoneNumber, question, message;
 
 const ready = function () {
   userName = document.getElementById("name").value;
   phoneNumber = document.getElementById("tel").value;
+  question = document.getElementById("question").value;
 
-  message = `Имя: ${userName}\nНомер: ${phoneNumber}\nОткуда: ${
+  message = `Имя: ${userName}\nНомер: ${phoneNumber}\nВопрос: ${question}\nОткуда: ${
     document.querySelector(".promo_flag") ? "С рекламы" : "Из Instagram"
   }`;
 };
@@ -35,6 +36,7 @@ const sender = function () {
 
   document.getElementById("name").value = "";
   document.getElementById("tel").value = "";
+  document.getElementById("question").value = "";
 
   return false;
 };

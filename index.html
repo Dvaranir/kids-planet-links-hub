@@ -106,6 +106,7 @@
       </div>
 
       <form class="submit-form" action="submit" onsubmit="return sender()">
+        <div class="submit-form_elements">
         <div class="form-element">
             <label for="name">Ваше имя</label>
             <input class="input" type="text" name="name" id="name" required>
@@ -114,8 +115,13 @@
             <label for="tel">Ваш номер</label>
             <input class="input" type="tel" name="phone" id="tel" required>
           </div>
+          <div class="form-element">
+            <label for="question">Ваш вопрос</label>
+            <input class="input" type="text" name="question" id="question" placeholder="Здравствуйте. Я по поводу...">
+          </div>
         
           <input class="submit-btn" type="submit" value="Перезвоните мне">
+        </div>
       </form>
       
     </main>
