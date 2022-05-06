@@ -1,2 +1,2 @@
-Technologies that was used:
-HTML, CSS, JAVASCRIPT, Telegram API
+**Technologies that was used:
+>HTML, CSS, JAVASCRIPT, Telegram API
