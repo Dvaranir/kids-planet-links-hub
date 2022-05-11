@@ -116,6 +116,13 @@ body {
 .whatsapp:hover {
   background-color: #45b853;
 }
+.telegram {
+  background-color: #219ed8;
+}
+
+.telegram:hover {
+  background-color: #1c8bbf;
+}
 
 .site {
   background-color: #e2d5d0;
