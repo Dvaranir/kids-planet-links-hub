@@ -168,7 +168,11 @@
         ></iframe>
       </div>
 
-      <form class="submit-form" action="submit" onsubmit="return sender()">
+      <form
+        class="submit-form"
+        action="submit"
+        onsubmit="onSubmit(); return sender()"
+      >
         <div class="submit-form_elements">
           <div class="form-element">
             <label for="name">Ваше имя</label>

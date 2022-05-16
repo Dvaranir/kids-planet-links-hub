@@ -40,3 +40,7 @@ const sender = function () {
 
   return false;
 };
+
+const onSubmit = () => {
+  alert("Благодарим за запрос. Мы свяжемся с Вами в самое ближайшее время.");
+};
